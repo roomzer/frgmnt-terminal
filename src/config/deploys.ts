@@ -63,11 +63,6 @@ export type ChainDeploy = {
    * unset — override per-deploy when you want a private node (Alchemy, etc.).
    */
   rpcUrl?: string
-  /**
-   * chainId @web3icons knows. Defaults to `chain.id`. Override when the icon
-   * registry uses a different id than the real network (e.g. MegaETH mainnet).
-   */
-  iconChainId?: number
   /** fUSD / sfUSD — only present where the protocol has issued share tokens. */
   tokens?: ProtocolTokens
   services: {
@@ -123,7 +118,6 @@ export const megaDeploy: ChainDeploy = {
   key: "mega",
   chain: megaeth,
   label: "MegaETH",
-  iconChainId: 6342,
   rpcUrl: "https://megaeth-mainnet.g.alchemy.com/v2/9QIISW-qgIkPSncQwc_ID",
   poolLogic: "0xf06C2D0A52329AeE95d5945cB5e826de53CED581",
   primaryAsset: {

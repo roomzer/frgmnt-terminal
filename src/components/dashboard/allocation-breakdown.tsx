@@ -1,5 +1,5 @@
 import { Pie, PieChart } from "recharts"
-import { TokenIcon } from "@web3icons/react/dynamic"
+import { TokenUSDC } from "@web3icons/react"
 
 import {
   Card,
@@ -133,18 +133,8 @@ export function AllocationBreakdown({
                             protocol={r.venue}
                             className="size-3.5"
                           />
-                        ) : r.tokenSymbol ? (
-                          <TokenIcon
-                            symbol={r.tokenSymbol}
-                            variant="mono"
-                            className="size-4"
-                            fallback={
-                              <span
-                                className="size-2.5 rounded-sm"
-                                style={{ backgroundColor: r.color }}
-                              />
-                            }
-                          />
+                        ) : r.tokenSymbol === "USDC" ? (
+                          <TokenUSDC variant="mono" className="size-4" />
                         ) : (
                           <span
                             className="size-2.5 rounded-sm"

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { NetworkIcon } from "@web3icons/react/dynamic"
 
+import { ChainIcon } from "@/components/chain-icon"
 import { useActiveDeploy } from "@/lib/active-deploy"
 import { usePoolSnapshot } from "@/hooks/use-pool-snapshot"
 import { formatApy, formatUsd } from "@/lib/format"
@@ -38,11 +38,7 @@ function DashboardPage() {
       <header className="flex flex-col gap-1">
         <div className="flex items-center gap-3">
           <span className="inline-flex items-end gap-1.5 text-2xl font-bold text-muted-foreground">
-            <NetworkIcon
-              chainId={deploy.iconChainId ?? deploy.chain.id}
-              variant="mono"
-              className="size-11"
-            />
+            <ChainIcon deployKey={deploy.key} className="size-11" />
             {deploy.label}
           </span>
         </div>
