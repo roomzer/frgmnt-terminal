@@ -128,7 +128,7 @@ export const megaDeploy: ChainDeploy = {
   },
   tokens: {
     fusd: {
-      address: "0x530e517E1344Ed95e9447fD8Bb0c46166cf4d4df",
+      address: "0x530E517e1344eD95E9447FD8Bb0C46166cF4D4df",
       symbol: "fUSD",
       decimals: 18,
       treatAsUsd: true,
