@@ -1,10 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "frgmnt-dashboard",
+  "name": "frgmnt-terminal",
   "compatibility_date": "2025-09-02",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
   "observability": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
 }
