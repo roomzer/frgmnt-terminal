@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 type Search = { redirect?: string }
 
 export const Route = createFileRoute("/login")({
+  ssr: false,
   validateSearch: (search: Record<string, unknown>): Search => ({
     redirect: typeof search.redirect === "string" ? search.redirect : undefined,
   }),
