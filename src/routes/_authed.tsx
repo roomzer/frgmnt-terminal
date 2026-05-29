@@ -12,7 +12,6 @@ import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { SiteHeader } from "@/components/site-header"
 
 export const Route = createFileRoute("/_authed")({
-  ssr: false,
   component: AuthedLayout,
 })
 
